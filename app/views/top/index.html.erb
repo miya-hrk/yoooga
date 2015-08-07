@@ -1,40 +1,14 @@
 <!DOCTYPE html>
-<html lang="ja">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
 <script type="text/javascript" src="js/jquery.scrollshow.js"></script>
 <script type="text/javascript" src="js/jquery.rollover.js"></script>
 <script type="text/javascript" src="js/jquery.slidewide.js"></script>
-<script>
-$(function(){
-    $('html').smoothscroll({easing : 'swing', speed : 1000, margintop : 10});
-    $('.totop').scrollshow({position : 500});
-    $('.slide').slidewide({
-        autoSlide    : true,
-        type         : 'repeat',
-        interval     : 3000,
-        duration     : 500,
-        easing       : 'swing',
-        imgHoverStop : true,
-        navHoverStop : true,
-        prevPosition : 0,
-        nextPosition : 0,
-        baseWidth    : 940
-    });
-    $('.slidePrev img').rollover();
-    $('.slideNext img').rollover();
-    });
-</script>
-<!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/stylen.css">
+
 </head>
 <body>
 
@@ -49,33 +23,14 @@ $(function(){
         <li><a href="sample.html">マイページ</a></li>
     </ul>
 </nav>
-<div class="slide">
-    <ul class="slideInner">
-        <li><a href="index.html"><%= image_tag 'photo01.jpg'%></li>
-        <li><a href="index.html"><%= image_tag 'photo02.jpg'%></a></li>
-        <li><a href="index.html"><%= image_tag 'photo03.jpg'%></a></li>
-    </ul>
-    <div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
-    <div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
-    <div class="controlNav"></div>
-</div><!-- /.slide -->
+
+<img src='/assets/bb.jpg' class="mainpic">
+
 <div id="contents">
 <div class="topNavi">
     <div class="topNaviColumn">
         <a class="topNaviCon" href="index.html">
-            <div class="topNaviPhoto"><img src="images/photo04.jpg" alt="" /></div>
-           <h2>前回の活動</h2>
-            <p><ul>
-                <li>場所:西葛西コナミスポーツ</li>
-                <li>日時:8月3日(月) 22時00分～</li>
-                <li>詳細を見る</li>
-            </ul>
-            </p>
-        </a>
-    </div><!-- /.topNaviColumn -->
-    <div class="topNaviColumn">
-        <a class="topNaviCon" href="index.html">
-            <div class="topNaviPhoto"><img src="images/photo04.jpg" alt="" /></div>
+            <div class="topNaviPhoto"><img src="photo04.jpg" alt="" /></div>
             <h2>次回の活動予定</h2>
             <p><ul>
                 <li>場所：目黒コナミスポーツ</li>
@@ -84,6 +39,17 @@ $(function(){
             </ul>
             </p>
         </a>
+        <a class="topNaviCon" href="index.html">
+        <div class="topNaviPhoto"><img src="photo04.jpg" alt="" /></div>
+            <h2>前回の活動</h2>
+            <p><ul>
+                <li>場所:西葛西コナミスポーツ</li>
+                <li>日時:8月3日(月) 22時00分～</li>
+                <li>詳細を見る</li>
+            </ul>
+            </p>
+        </a>
+    </div>
 </div><!-- /.topNavi -->
 <div id="main">
 <section>
@@ -129,7 +95,6 @@ $(function(){
         <li><a href="index.html"><img src="images/banner.png" alt=""></a></li>
     </ul>
 </div> -->
-
 </div><!-- /#contents -->
 <footer>
     <div class="footmenu">

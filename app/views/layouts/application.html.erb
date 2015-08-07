@@ -2,6 +2,13 @@
 <html>
 <head>
   <title>Yoooga</title>
+  <html lang="ja">
+<link rel="stylesheet" type="text/css" href="css/stylen.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -14,11 +21,26 @@
 </head>
 <body>
 <header>
-    <h1><a href="index.html">PS ヨガ部！！</a></h1>
-    <div class="contact"><a href="index.html">ログイン</a></div>
+    <h1><a href="/">PS ヨガ部！！</a></h1>
+
+    <% if user_signed_in? %>
+
+    <div class="log">
+      <div class="contact1"><%= link_to "ログアウト", destroy_user_session_path, method: :delete, :class => 'logout'  %> </div>
+    </div>
+
+    <% else %>
+     <div class="log">
+    <div class="contact1"><a href="/users/sign_in">ログイン</a></div>
+    <div class="contact2"><a href="/users/sign_up">新規登録</a></div>
+  </div>
+    <% end %>
+
     <p class="summary">
     LesMillsの提供しているスタジオプログラムに参加しています。
     </p>
+
+
 </header>
 
 <%= yield %>

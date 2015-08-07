@@ -195,22 +195,30 @@ header h1 {
     margin-bottom:20px;
 }
 
-.contact {
+.login{
     position:absolute;
     top:0;
     right:0;
     vertical-align:top;
-
 }
 
-.contact a {
+.log a {
     display:block;
-    padding:5px 10px 5px 29px;
+    padding:5px 10px 5px 10px;
     color:#fff;
     background:#f19500;
     border-radius:4px;
     text-decoration:none;
     background:#f19500 url(../images/mail.png) 10px 50% no-repeat;
+}
+
+.contact1{
+    margin:0 0 0 10px;
+    float:right;
+}
+
+.contact2{
+    float:right;
 }
 
 .contact a:hover {
@@ -405,52 +413,17 @@ footer {
 /*================================================
  *  トップページ
  ================================================*/
-/* スライドショー */
-.slide {
+/* メイン画像 */
+.mainpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     position:relative;
     overflow:hidden;
     padding-bottom:25px;
 }
 
-.slidePrev {
-    position:absolute;
-    cursor:pointer;
-    z-index:100;
-}
 
-.slideNext {
-    position:absolute;
-    cursor:pointer;
-    z-index:100;
-}
-
-.slidePrev img {
-    position:absolute;
-    width:50px !important;
-    height:60px !important;
-}
-
-.slideNext img {
-    position:absolute;
-    width:50px !important;
-    height:60px !important;
-}
-
-.slideInner {
-    position:relative;
-    margin:0;
-    padding:0;
-}
-.slideInner li {
-    float:left;
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-.slideInner li img {
-    margin:0 5px;
-    padding:0;
-}
 
 .filterPrev {
     position:absolute;
@@ -504,17 +477,18 @@ footer {
 }
 
 .topNavi {
+    float:left;
     overflow:hidden;
     position:relative;
     margin-right:-2%;
-    margin-top:20px;
+    margin-top:0;
     margin-bottom:20px;
 }
 
 .topNaviColumn {
+    float:left;
     display:inline;
     width:32%;
-    float:left;
     margin-right:1%;
 }
 
@@ -530,6 +504,8 @@ footer {
     background:#f1f1f1;
     border:1px solid #f1f1f1;
     border-radius:4px;
+    width: 300px;
+    margin: 10px 10px 30px 0;
 }
 
 .topNaviCon:hover {
@@ -557,7 +533,7 @@ footer {
 }
 
 .topNaviPhoto img {
-    width:100%;
+    width:300px;
 }
 
 /*================================================
@@ -675,10 +651,11 @@ footer {
     .topNaviColumn {
         display:block;
         box-sizing:border-box;
-        width:100%;
+        width:300px;
         float:none;
         margin-right:0;
         margin-bottom:10px;
     }
+
 
 }

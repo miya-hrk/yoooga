@@ -65,6 +65,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
+    event-calendar (2.3.3)
     execjs (2.5.2)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
@@ -184,6 +185,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  event-calendar
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
