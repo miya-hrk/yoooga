@@ -166,12 +166,7 @@ dd {
     margin-bottom:1em;
 }
 
-table {
-    width:100%;
-    margin-bottom:1em;
-    border-collapse:collapse;
-    border:1px solid #ddd;
-}
+
 th {
     padding:10px;
     text-align:center;
@@ -266,6 +261,10 @@ nav li a:hover {
     text-decoration:none;
     background:#ddd;
 }
+
+
+
+
 
 /*================================================
  *  サブコンテンツ

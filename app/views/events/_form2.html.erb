@@ -1,0 +1,18 @@
+<%= form_tag(:controller => "events", :action => "create_ticket") do %>
+
+<p>
+出欠を入力する
+  </p>
+
+<div class="field">
+  <%= radio_button 'status','index',"1" %>〇
+  <%= radio_button 'status','index',"2" %>△
+  <%= radio_button 'status','index',"3" %>×<br>
+
+  <textarea name="comment" rows="4" cols="10">コメント：</textarea>
+  <br>
+  </div>
+  <div class="actions">
+  <input type="submit" value="登録"><input type="reset" value="リセット">
+  </div>
+  <% end %>

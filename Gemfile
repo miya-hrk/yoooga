@@ -47,4 +47,5 @@ gem 'pry-rails'
 gem 'devise'
 gem 'kaminari'
 gem 'paperclip'
-gem 'event-calendar', :require => 'event_calendar'
+gem 'nokogiri'
+gem "simple_calendar", "~> 1.1.0"

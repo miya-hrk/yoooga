@@ -1,0 +1,14 @@
+
+.calendar {
+    height: 700px;
+    width:60%;
+    margin: auto;
+    margin-bottom:1em;
+    border-collapse:collapse;
+    border:1px solid #ddd;
+}
+
+tbody tr td{
+  height: 100px;
+  width: 200px;
+}

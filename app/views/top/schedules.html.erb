@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="stylesheet" type="text/css" href="css/stylen.css">
+<link rel="stylesheet" type="text/css" href="css/schedules.css">
+<body>
+<header>
+    <p class="summary">
+    </p>
+    <a href="/events/new">イベントの登録</a>
+</header>
+
+<div class="calendar">
+<%= month_calendar events: @events  do |date, events| %>
+    <%= date.day %>
+
+    <% events.each do |event| %>
+        <div class="events">
+        <% if date == event.starts_at.to_date %>
+        <a href="events/<%= event.id %>">
+        <%= event.starts_at.hour %> : <%=event.starts_at.min %>~
+        <%= event.name %></a>
+        <% end %>
+        </div>
+    <% end %>
+<% end %>
+    </div>
+
+<footer>
+    <div class="footmenu">
+        <ul>
+            <li><a href="index.html">この部活について</a></li>
+            <li><a href="index.html">スケジュール管理</a></li>
+            <li><a href="index.html">各種情報</a></li>
+            <li><a href="index.html">交流掲示板</a></li>
+            <li><a href="index.html">アルバム</a></li>
+            <li><a href="sample.html">マイページ</a></li>
+        </ul>
+    </div>
+    <div class="copyright">Copyright &#169; 20XX - 20XX SITENAME All Rights Reserved.</div>
+</footer>
+<div class="totop"><a href="#"><img src="images/totop.png" alt="ページのトップへ戻る"></a></div><!-- /.totop -->
+</body>
+</html>
